@@ -1,0 +1,71 @@
+#index body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#index .topnav {
+  overflow: hidden;
+  background-color: #808000;
+}
+
+#index .topnav a {
+  float: right;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#index .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#index .topnav a.active {
+  float:left;
+}
+#index .object{
+background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url(quiz.jpg);
+background-size: cover;
+width: 100%;
+height: 100%;
+position:relative;
+float: left;
+
+}
+#index .cap #body_content {
+padding: 20px;
+padding-bottom: 50px;
+color: white;
+font: 12px Monaco, Mono-Space;
+margin: 0;
+text-align:center;
+height: 480px;
+font-size: 2.3vw;
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 0%;
+
+}
+#index #body_content #butt{
+background-color: #808000;
+color: white;
+height: 58px;
+width: 110px;
+}
+#index .footer{
+ height: 50px;
+ background-color:#808000;
+}
+#index footer #footer_content {
+background-color:#808000;
+color: white;
+line-height: 55px;
+padding: 0 0px;
+}
