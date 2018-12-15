@@ -5,7 +5,7 @@
 
 #index .topnav {
   overflow: hidden;
-  background-color: #808000;
+  background-color: #8080000000;
 }
 
 #index .topnav a {
@@ -54,18 +54,127 @@ margin-top: 0%;
 
 }
 #index #body_content #butt{
-background-color: #808000;
+background-color: #8080000000;
 color: white;
 height: 58px;
 width: 110px;
 }
 #index .footer{
  height: 50px;
- background-color:#808000;
+ background-color:#8080000000;
 }
 #index footer #footer_content {
-background-color:#808000;
+background-color:#80800000000;
 color: white;
 line-height: 55px;
 padding: 0 0px;
+}
+
+/* sign_in.html and sign_up.html css rules*/
+.sign_in body {
+  height: 100%;
+  overflow: scroll;
+  margin: 0;
+}
+
+.sign_in ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#808000;
+    }
+    .sign_in li a{
+    display: block;
+    color: #7FDBFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    }
+.sign_in body {font-family: Arial, Helvetica, sans-serif;}
+.sign_in input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+.sign_in .container {
+padding: 16px;
+height: auto;
+}
+.sign_in span.psw {
+float: right;
+padding-top: 16px;
+}
+.sign_in span a{
+  color: #808000;
+}
+.sign_in button {
+background-color: #808000;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+.sign_in .cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+.sign_in .modal {
+display: block;
+margin-bottom: 0px;
+background-color: #DDDDDD;
+width: 100%;
+padding-top: 30px;
+}
+.sign_in .modal-content {
+background-color: #fefefe;
+border: 1px solid #888;
+width: 80%;
+height:auto;
+padding-bottom: 50px;
+margin-left: 60px;
+}
+.sign_in .animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+.sign_in @-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+.sign_in @keyframes animatezoom {
+from {transform: scale(0)}
+to {transform: scale(1)}
+}
+
+.sign_in .footer{
+ height: 70px;
+ margin-bottom: 0px;
+ background-color:#808000;
+}
+.sign_in footer #footer_content {
+background:#808000000;
+color: white;
+line-height: 50px;}
+.sign_in ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color:#808000;
+   }
+ .sign_in li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5vw;
 }
