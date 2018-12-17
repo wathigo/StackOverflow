@@ -1,11 +1,12 @@
 #index body {
   margin: 0;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #index .topnav {
   overflow: hidden;
-  background-color: #8080000000;
+  background-color: #808000;
 }
 
 #index .topnav a {
@@ -54,17 +55,17 @@ margin-top: 0%;
 
 }
 #index #body_content #butt{
-background-color: #8080000000;
+background-color: #808000;
 color: white;
 height: 58px;
 width: 110px;
 }
 #index .footer{
  height: 50px;
- background-color:#8080000000;
+ background-color:#808000;
 }
 #index footer #footer_content {
-background-color:#80800000000;
+background-color:#808000;
 color: white;
 line-height: 55px;
 padding: 0 0px;
@@ -160,7 +161,7 @@ to {transform: scale(1)}
  background-color:#808000;
 }
 .sign_in footer #footer_content {
-background:#808000000;
+background:#808000;
 color: white;
 line-height: 50px;}
 .sign_in ul {
@@ -177,4 +178,58 @@ line-height: 50px;}
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.5vw;
+}
+#prof body{
+  align-items: center;
+
+}
+#profbody{
+background-color: #C0C0C0;
+height: 550px;
+overflow-y: scroll;
+}
+.container{
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 100%;
+}
+.center{
+  text-align: center;
+}
+#teo{
+  align-items: center;
+  text-align: center;
+}
+.askbutt{
+  background-color: #808000;
+  color: white;
+}
+.form-popup {
+  display: none;
+  position:sticky;
+   bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 80%;
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #C0C0C0;
+  margin-left: 140px;
+}
+.form-container input[type=text], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;}
+.btn{
+  color: white;
+  background-color: #808000;
+}
+.clbtn{
+  background-color: #FF0000;
+  color: white;
 }
