@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>
+        StackOverflow-Lite
+     </title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script>
+        function openForm() {
+        document.getElementById("myForm").style.display = "block";
+          }
+
+          function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+</script>
+</head>
+<div id = "index">
+  <body id="profbody">
+    <div class="topnav">
+  <a class="active" href="index.html">StackOverflow</a>
+  <a href="profile.html">All questions</a>
+</div>
+<article class="container">
+<h2 class="center">StackOverflow</h2>
+<div id="teo">
+<p>Ask a question</p>
+<button class="askbutt" onclick="openForm()">Ask</button>
+</div>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Post a question</h1>
+
+    <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="Enter Title" name="title" required>
+
+    <label for="postquestion"><b>Question</b></label>
+    <textarea name="question" id="postquestion" cols="108" rows="10" placeholder="Post your question here."></textarea>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="clbtn" onclick="closeForm()">Close</button>
+  </form>
+</div>
+    <article >
+        <h3 class="center" id="top_questions" class="border1">My Questions</h3>
+    </article>
+
+    <article >
+        <div>
+            <p><b>Aenean commodo ligula eget dolor? </b></p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div>
+        <div>
+            <p><i class="fa fa-thumbs-up"></i>27
+               <i class="fa fa-thumbs-down"></i>9
+               <a href="comments.html"><i  class="fa fa-comment-o"></i></a>
+             </p>
+        </div>
+    </article>
+    <article >
+        <div>
+            <p><b>Aenean commodo ligula eget dolor? </b></p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div>
+        <div>
+            <p><i class="fa fa-thumbs-up"></i>27
+               <i class="fa fa-thumbs-down"></i>9
+               <a href="comments.html"><i class="fa fa-comment-o"></i></a></p>
+        </div>
+    </article>
+    <article>
+    <div>
+        <p><b>Aenean commodo ligula eget dolor? </b></p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+    </div>
+    <div>
+        <p><i class="fa fa-thumbs-up"></i>27
+           <i class="fa fa-thumbs-down"></i>9
+           <a href="comments.html"><i class="fa fa-comment-o"></i></a></p>
+    </div>
+    </article>
+</article>
+<footer class="footer">
+  <div id="footer_content">
+  <p>@2018 StackOverflow All rights reserved</p>
+  </div>
+</footer>
+  </body>
+</div>
