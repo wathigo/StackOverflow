@@ -70,131 +70,27 @@ color: white;
 line-height: 55px;
 padding: 0 0px;
 }
-
-/* sign_in.html and sign_up.html css rules*/
-.sign_in body {
-  height: 100%;
-  overflow: scroll;
-  margin: 0;
-}
-
-.sign_in ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#808000;
-    }
-    .sign_in li a{
-    display: block;
-    color: #7FDBFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.5vw;
-    }
-.sign_in body {font-family: Arial, Helvetica, sans-serif;}
-.sign_in input[type=text], input[type=password] {
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-box-sizing: border-box;
-}
-.sign_in .container {
-padding: 16px;
-height: auto;
-}
-.sign_in span.psw {
-float: right;
-padding-top: 16px;
-}
-.sign_in span a{
-  color: #808000;
-}
-.sign_in button {
-background-color: #808000;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 100%;
-}
-.sign_in .cancelbtn {
-width: auto;
-padding: 10px 18px;
-background-color: #f44336;
-}
-.sign_in .modal {
-display: block;
-margin-bottom: 0px;
-background-color: #DDDDDD;
-width: 100%;
-padding-top: 30px;
-}
-.sign_in .modal-content {
-background-color: #fefefe;
-border: 1px solid #888;
-width: 80%;
-height:auto;
-padding-bottom: 50px;
-margin-left: 60px;
-}
-.sign_in .animate {
--webkit-animation: animatezoom 0.6s;
-animation: animatezoom 0.6s
-}
-.sign_in @-webkit-keyframes animatezoom {
-from {-webkit-transform: scale(0)}
-to {-webkit-transform: scale(1)}
-}
-.sign_in @keyframes animatezoom {
-from {transform: scale(0)}
-to {transform: scale(1)}
-}
-
-.sign_in .footer{
- height: 70px;
- margin-bottom: 0px;
- background-color:#808000;
-}
-.sign_in footer #footer_content {
-background:#808000;
-color: white;
-line-height: 50px;}
-.sign_in ul {
- list-style-type: none;
- margin: 0;
- padding: 0;
- overflow: hidden;
- background-color:#808000;
-   }
- .sign_in li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.5vw;
-}
 #prof body{
   align-items: center;
 
 }
-#profbody{
+.profbody{
 background-color: #C0C0C0;
-height: 550px;
+height: 100%;
 overflow-y: scroll;
+float: left;
 }
 .container{
   margin-left: 50px;
   margin-right: 50px;
   height: 100%;
+  color: white;
 }
 .center{
   text-align: center;
+}
+.profbody .center, .profbody .form-container{
+  color: #000000;
 }
 #teo{
   align-items: center;
@@ -204,32 +100,74 @@ overflow-y: scroll;
   background-color: #808000;
   color: white;
 }
-.form-popup {
+.form-popup, .question-form {
   display: none;
   position:sticky;
-   bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
+  bottom: 0;
+  top: 80px;
+  left:290px;
+  border: 3px solid #808000;
+  border-radius: 25px;
   z-index: 9;
-  width: 80%;
+  width: 43%;
 }
+
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
   padding: 10px;
-  background-color: #C0C0C0;
-  margin-left: 140px;
+    color: white;
 }
 .form-container input[type=text], textarea {
-  width: 100%;
+  width: 80%;
   padding: 15px;
   margin: 5px 0 22px 0;
-  border: none;}
-.btn{
-  color: white;
-  background-color: #808000;
+  border: none;
 }
-.clbtn{
+textarea{
+  width: 80%;
+}
+.cancelbtn, .clbtn{
   background-color: #FF0000;
   color: white;
+  border-radius: 15px;
+  float: right;
+  height: 40px;
+  width: 100px;
+}
+.clbtn{
+  margin-right: 65px;
+}
+.submitbtn, .btn{
+  background-color: #808000;
+  color: white;
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+}
+input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+.links{
+  color: #808000;
+}
+.options{
+  border: 10px;
+}
+.options .fa{
+  color: #000000;
+  font-size: 27px !important;
+  border: 10px;
+}
+.feedback .fa{
+  color: #808000;
+  font-size: 27px !important;
+  border: 10px;
+}
+.QuestionAnswer{
+  color: #000000;
 }

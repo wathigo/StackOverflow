@@ -5,22 +5,136 @@
       <title>
         StackOverflow-Lite
      </title>
-    <link rel="stylesheet"href="style.css"
+    <link rel="stylesheet"href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script>
+            function openSignIn() {
+              closeSignUp();
+              document.getElementById("signIn").style.display = "block";
+              }
+
+              function openSignUp() {
+                 closeSignIn();
+                 document.getElementById("signUp").style.display = "block";
+                }
+
+              function closeSignIn() {
+              document.getElementById("signIn").style.display = "none";
+            }
+              function closeSignUp() {
+              document.getElementById("signUp").style.display = "none";
+              }
+
+    </script>
 </head>
 <div id = "index">
   <body>
     <div class="topnav">
   <a href="index.html" class="active">StackOverflow</a>
-  <a href="sign_in.html">sign in</a>
-  <a href="sign_up.html">sign up</a>
+  <a onclick="openSignIn()">sign in</a>
+  <a onclick="openSignUp()">sign up</a>
 </div>
 <div class="object cap">
-  <div id="body_content">
-  <h2>StackOverflow</h2>
-  <p>StackOverflow is a platform where one can ask questions and receive a feedback.</p>
-    <p> To view or contribute on our platform:</p>
-    <button id="butt"onclick="location.href='sign_in.html'">Start Here</button>
- </div>
+  <div class="form-popup" id="signUp">
+  <form action="/action_page.php" class="form-container">
+<div class="container">
+<h1>Sign Up</h1>
+<p>Please fill in this form to create an account.</p>
+<hr>
+
+<label for="email"><b>Email</b></label>
+<input type="text" placeholder="Enter Email" name="email" required>
+
+<label for="psw"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw-repeat"><b>Repeat Password</b></label>
+<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+<label>
+ <input type="checkbox" checked="checked" name="remember"> Remember me
+</label>
+
+
+<div class="clearfix">
+ <button onclick="location.href='profile.html'" type="submit" class="submitbtn">Sign Up</button>
+ <button onclick="closeSignUp()" type="button" class="cancelbtn">Cancel</button>
+</div>
+
+</div>
+</form>
+</div>
+<div class="form-popup" id="signIn">
+  <form action="/action_page.php" class="form-container">
+  <div id="sign_body"class="container">
+  <h3>ENTER THE FIELDS BELOW TO CONTINUE:</h3>
+  <hr>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  <div id="lower">
+    <button class="submitbtn" type="submit" onclick="location.href='profile.html'">Login</button>
+
+    <button type="button" onclick="closeSignIn()" class="cancelbtn">Cancel</button>
+  </div>
+  <span class="psw">Forgot <a class="links" href="#">password?</a></span>
+  <span class="psv">Not a member <a class="links" onclick="openSignUp()"href="#">sign up</a></span>
+  </div>
+</form>
+</div>
+
+  <article id="indexBody"class="container">
+  <h2 class="center">StackOverflow</h2>
+      <article >
+          <h3 class="center" id="top_questions" class="border1">Top Questions</h3>
+      </article>
+
+      <article >
+          <div>
+              <p><b>Aenean commodo ligula eget dolor? </b></p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </div>
+          <div class="options">
+              <p><i class="fa fa-thumbs-up"></i>27
+                 <i class="fa fa-thumbs-down"></i>9
+                 <a href="comments.html"><i  class="fa fa-comment-o"></i></a>
+               </p>
+          </div>
+      </article>
+      <article >
+          <div>
+              <p><b>Aenean commodo ligula eget dolor? </b></p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+              Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          </div>
+          <div class="options">
+              <p><i class="fa fa-thumbs-up"></i>27
+                 <i class="fa fa-thumbs-down"></i>9
+                 <a href="comments.html"><i class="fa fa-comment-o"></i></a></p>
+          </div>
+      </article>
+      <article>
+      <div>
+          <p><b>Aenean commodo ligula eget dolor? </b></p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+      </div>
+      <div class="options">
+          <p><i class="fa fa-thumbs-up"></i>27
+             <i class="fa fa-thumbs-down"></i>9
+             <a href="comments.html"><i class="fa fa-comment-o"></i></a></p>
+      </div>
+      </article>
+  </article>
 </div>
 <footer class="footer">
   <div id="footer_content">
