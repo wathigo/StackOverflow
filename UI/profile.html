@@ -7,27 +7,56 @@
      </title>
     <link rel="stylesheet"href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+      }
+      function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+</script>
 </head>
 <div id = "index">
-  <body id="profbody">
+  <body>
     <div class="topnav">
   <a class="active" href="index.html">StackOverflow</a>
   <a href="quiz.html">My questions</a>
 </div>
+<div class="profbody">
+  <div id="teo">
+<h4>Ask a question</h4>
+<button class="askbutt" onclick="openForm()">Ask</button>
+</div>
+<div class="question-form" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Post a question</h1>
+
+    <p ><b>Title:</b></p>
+    <input type="text" placeholder="Enter Title" name="title" required>
+
+    <p><b>Question:</b><p>
+    <textarea name="question" id="postquestion" cols="108" rows="10" placeholder="Post your question here."></textarea>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="clbtn" onclick="closeForm()">Close</button>
+</form>
+</div>
+
 <article class="container">
+
 <h2 class="center">StackOverflow</h2>
     <article >
         <h3 class="center" id="top_questions" class="border1">Top Questions</h3>
     </article>
 
     <article >
-        <div>
+        <div class="QuestionAnswer">
             <p><b>Aenean commodo ligula eget dolor? </b></p>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
         </div>
-        <div>
+        <div class="feedback">
             <p><i class="fa fa-thumbs-up"></i>27
                <i class="fa fa-thumbs-down"></i>9
                <a href="comments.html"><i  class="fa fa-comment-o"></i></a>
@@ -35,32 +64,33 @@
         </div>
     </article>
     <article >
-        <div>
+        <div class="QuestionAnswer">
             <p><b>Aenean commodo ligula eget dolor? </b></p>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
             Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
         </div>
-        <div>
+        <div class="feedback">
             <p><i class="fa fa-thumbs-up"></i>27
                <i class="fa fa-thumbs-down"></i>9
                <a href="comments.html"><i class="fa fa-comment-o"></i></a></p>
         </div>
     </article>
     <article>
-    <div>
+    <div class="QuestionAnswer">
         <p><b>Aenean commodo ligula eget dolor? </b></p>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
         Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
     </div>
-    <div>
+    <div class="feedback">
         <p><i class="fa fa-thumbs-up"></i>27
            <i class="fa fa-thumbs-down"></i>9
            <a href="comments.html"><i class="fa fa-comment-o"></i></a></p>
     </div>
     </article>
 </article>
+</div>
 <footer class="footer">
   <div id="footer_content">
   <p>@2018 StackOverflow All rights reserved</p>
