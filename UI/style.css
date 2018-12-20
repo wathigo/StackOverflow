@@ -174,3 +174,7 @@ box-sizing: border-box;
 .QuestionAnswer{
   color: #000000;
 }
+.dlbtn{
+  background-color:  	#FF0000;
+  border-radius: 10px;
+}
